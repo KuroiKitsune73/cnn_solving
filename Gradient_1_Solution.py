@@ -53,3 +53,4 @@ ax.legend()
 
 # Show the plot
 plt.show()
+plt.show()

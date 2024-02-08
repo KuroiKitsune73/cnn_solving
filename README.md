@@ -53,4 +53,3 @@ $$
 - In the process of descent, the ball encounters various obstacles in its path, which may be similar to the local minimums of the error function. The longer the ball rolls, the closer it can come to the deepest point of the gorge, which corresponds to minimizing the error function and achieving optimal values of the parameters of the neural network model.*
 
 - **The most difficult thing is to choose the learning step** so that the gradient descent does not diverge and does not take too much time. Sometimes the values of gradients transmitted to the network weights can become very small or very large, which makes it difficult to update the weights and slows down the convergence of the algorithm. In such situations, various methods of normalization and initialization of scales are used, the selection of activation functions is used.
-(/Users/viktoriakavina/Downloads/cnn/Gradient.png)
