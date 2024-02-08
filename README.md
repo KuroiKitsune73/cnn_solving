@@ -14,36 +14,31 @@
 
 To perform gradient descent on the function f(x, y) = x^2 + xy + y^2,
 you need to calculate the gradient of the function and update the values of the variables x and y in accordance with the gradient descent formula:
-$$
+
 x_new=x-a*(δf/δx)
-$$
-$$
+
 y_new=y-a*(δf/δy)
-$$
+
 Where a is the learning rate, and δf/δx and δf/δy are the partial derivatives of the function f with respect to x and y, respectively.
 
 *Calculate the partial derivatives of the function f(x, y):*
-$$
-δf/δx = 2x + y
-$$
-$$
-δf/δy = 2y+x
-$$
-*Then substitute the initial values (x = 1.3) and (y = 5.4) into these formulas:*
-$$
-δf/δx = 2 * 1.3 + 5.4 = 7 
-$$
 
-$$
+δf/δx = 2x + y
+
+δf/δy = 2y+x
+
+*Then substitute the initial values (x = 1.3) and (y = 5.4) into these formulas:*
+
+δf/δx = 2 * 1.3 + 5.4 = 7 
+
 δf/δy = 1.3 + 2 * 5.4 = 12.7
-$$
+
 *Now we can update the x and y values using the gradient descent formulas:*
-$$
+
 x_new = 1.3 - 0.01 * 7 = 1.226
-$$
-$$
+
 y_new = 5.4 - 0.01 * 12.7 = 5.273
-$$
+
 *Thus, after the first step of gradient descent with (a = 0.01), the new values of the variables (x) and (y) are 1.226 and 5.27*
 
 - If you still have difficulty understanding the gradient descent, imagine a gorge with a large number of stones into which the ball rolls. It rolls to the very bottom on a random trajectory, hitting random depressions and ledges. The process of learning a neural network can be perceived as the release of this ball: **the longer it falls, the closer it is to the minimum of function**.
